@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "Quinoa Chips",
+    "image": "images/Quinoa.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 2,
+    "title": "Soya Chips",
+    "image": "images/Soya.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 3,
+    "title": "Palak Chips",
+    "image": "images/Palak.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 4,
+    "title": "Oats Chips",
+    "image": "images/Oats.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 5,
+    "title": "Ragi Chips",
+    "image": "images/Ragi.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 6,
+    "title": "Beetroot Chips",
+    "image": "images/Beetroot.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  },
+  {
+    "id": 7,
+    "title": "Jowar Chips",
+    "image": "images/Jowar.jpeg",
+    "price": "85",
+    "weight": "50 gms"
+  }
+]
