@@ -5,14 +5,12 @@ import Img1 from "../../Images/Gallery/Img1.jpeg";
 import Img2 from "../../Images/Gallery/Img2.jpeg";
 import Img3 from "../../Images/Gallery/Img3.jpeg";
 import Img4 from "../../Images/Gallery/Img4.jpeg";
-import Img5 from "../../Images/Gallery/Img5.jpeg";
 import Img6 from "../../Images/Gallery/Img6.jpeg";
 import Img7 from "../../Images/Gallery/Img7.jpeg";
 import Img8 from "../../Images/Gallery/Img8.jpeg";
-import Img9 from "../../Images/Gallery/Img9.jpeg";
 
 const ProductGallery = () => {
-  const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8, Img9];
+  const images = [Img1, Img2, Img3, Img4, Img6, Img7, Img8];
 
   return (
     <div className="md:px-32 pb-6 pt-20">
