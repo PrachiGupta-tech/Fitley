@@ -17,19 +17,37 @@ const AllProducts = ({ products }) => {
     window.location.href = "tel:+91 8800664798";
   };
 
-  const handleWhatsappOrder = () => {
-    // const message = encodeURIComponent(
-    //   "Hello, I would like to place an order."
-    // );
-    // const whatsappUrl = `https://wa.me/8800664798?text=${message}`;
-    // window.open(whatsappUrl, "_blank");
-    const contactNumber = "+91 8800664798";
-    const whatsAppText = "Hello, I would like place an order!";
-    const encodedText = encodeURIComponent(whatsAppText);
-    const link = `https://wa.me/${contactNumber}?text=${encodedText}`;
+  // const handleWhatsappOrder = () => {
+  //   // const message = encodeURIComponent(
+  //   //   "Hello, I would like to place an order."
+  //   // );
+  //   // const whatsappUrl = `https://wa.me/8800664798?text=${message}`;
+  //   // window.open(whatsappUrl, "_blank");
+  //   const contactNumber = "+91 8800664798";
+  //   const whatsAppText = "Hello, I would like place an order!";
+  //   const encodedText = encodeURIComponent(whatsAppText);
+  //   const link = `https://wa.me/${contactNumber}?text=${encodedText}`;
 
-    window.open(link, "_blank");
-  };
+  //   window.open(link, "_blank");
+  // };
+  
+  const handleWhatsappOrder = () => {
+  let contactNumber = "8800664798"; // Default for desktop
+
+  // Check if the device is mobile
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  
+  if (isMobile) {
+    contactNumber = "+91" + contactNumber; // Add country code for mobile
+  }
+
+  const whatsAppText = "Hello, I would like to place an order!";
+  const encodedText = encodeURIComponent(whatsAppText);
+  const link = `https://wa.me/${contactNumber}?text=${encodedText}`;
+
+  window.open(link, "_blank");
+};
+
 
   return (
     <>
