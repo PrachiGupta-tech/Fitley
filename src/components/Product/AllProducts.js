@@ -18,11 +18,17 @@ const AllProducts = ({ products }) => {
   };
 
   const handleWhatsappOrder = () => {
-    const message = encodeURIComponent(
-      "Hello, I would like to place an order."
-    );
-    const whatsappUrl = `https://wa.me/8800664798?text=${message}`;
-    window.open(whatsappUrl, "_blank");
+    // const message = encodeURIComponent(
+    //   "Hello, I would like to place an order."
+    // );
+    // const whatsappUrl = `https://wa.me/8800664798?text=${message}`;
+    // window.open(whatsappUrl, "_blank");
+    const contactNumber = "8800664798";
+    const whatsAppText = "Hello, I would like place an order!";
+    const encodedText = encodeURIComponent(whatsAppText);
+    const link = `https://wa.me/${contactNumber}?text=${encodedText}`;
+
+    window.open(link, "_blank");
   };
 
   return (
